@@ -29,6 +29,7 @@ SRC_URI += " \
     file://0005-ARM-dts-sunxi-h3-h5-represent-the-mdio-switch-used-b.patch \
     file://0006-ARM-dts-sunxi-Restore-EMAC-changes-boards.patch \
     file://0007-ARM-dts-orange-pi-zero-Adjust-wifi-settings.patch \
+    file://0008-serial-mvebu-uart-Fix-reporting-of-effective-CSIZE-t.patch \
     file://${KERNEL_DEFCONFIG}"
 SRC_URI[sha256sum] = "2cf3accdbf9396141169f5906c77069f61554bc6a2f88c6c1c1983030e4e3ed1"
 SRCREV = "c4dc6dcc96ee8cda3311988ab9339a1201d50280"
