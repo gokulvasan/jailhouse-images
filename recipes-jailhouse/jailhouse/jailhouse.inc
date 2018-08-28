@@ -31,7 +31,7 @@ inherit dpkg
 
 DEPENDS = "linux-image-${KERNEL_NAME}"
 
-dpkg_runbuild_prepend() {
+dpkg_prepare_prepend() {
     cp -r ${WORKDIR}/debian ${S}/
     if [ "${DISTRO_ARCH}" != "amd64" ]; then
         # Install device trees only on non-x86 archs as they only exist there
