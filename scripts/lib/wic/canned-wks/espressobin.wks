@@ -1,0 +1,3 @@
+part / --source rootfs --ondisk mmcblk --fstype=ext4 --label platform --align 1024
+
+bootloader --append="root=/dev/mmcblk0p1"
